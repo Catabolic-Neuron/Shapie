@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodecahedron 3D</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="stylish.css">
+    <style>
+        .con3d{
+            height: 680px;
+            width: 700px; 
+        }
+    </style>
+</head>
+<body class="bg-lime-600 font-mono py-4 px-7 transition duration-200">
+    <div class="flex ">
+        <div class="font-semibold text-3xl flex felx-row">Shapei</div>
+        <div class="flex grow justify-center">
+            <div class="px-8 cursor-pointer relative before:content-[''] before:absolute before:w-0 before:h-0.5 before:bottom-2 before:left-0 before:bg-current before:transition-all before:duration-300 hover:before:w-full">Home</div>
+            <div class="px-8 cursor-pointer relative before:content-[''] before:absolute before:w-0 before:h-0.5 before:bottom-2 before:left-0 before:bg-current before:transition-all before:duration-300 hover:before:w-full">Linear</div>
+            <div class="px-8 cursor-pointer relative before:content-[''] before:absolute before:w-0 before:h-0.5 before:bottom-2 before:left-0 before:bg-current before:transition-all before:duration-300 hover:before:w-full">Curves</div>
+            <div class="px-8 cursor-pointer relative before:content-[''] before:absolute before:w-0 before:h-0.5 before:bottom-2 before:left-0 before:bg-current before:transition-all before:duration-300 hover:before:w-full">3D</div>
+            <div class="px-8 cursor-pointer relative before:content-[''] before:absolute before:w-0 before:h-0.5 before:bottom-2 before:left-0 before:bg-current before:transition-all before:duration-300 hover:before:w-full">About</div>
+        </div>
+        <div class="flex">
+            <div>
+                <span id ="omprakas" class="material-symbols-outlined px-6 cursor-pointer hover:rotate-45 duration-200">
+                    clear_night
+                </span>
+            </div>
+            <div>
+                EN
+            </div>
+            <span class="material-symbols-outlined px-6">
+                menu
+            </span>
+        </div>
+    </div>
+    <div class="text-5xl inline-block w-96 text-wrap align-top">
+        <div class="font-extrabold text-white my-5">
+            Dodecahedron
+        </div>
+        <div class="text-xl text-white my-5">
+            A dodecahedron, from Greek for "twelve faces," is a polyhedron with twelve flat faces. The most familiar type is the regular dodecahedron, a Platonic solid with regular pentagonal faces and icosahedral symmetry. Variants include the pyritohedron and tetartoid, which share the same vertex and edge structure but have irregular faces. The rhombic dodecahedron, with octahedral symmetry, and its variations are space-filling. A unique feature of the regular dodecahedron is that one can draw infinite straight lines from a corner that return to the original point without crossing other corners.
+        </div>
+    </div>
+
+    <div class="con3d inline-block align-top">
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.5.9/build/spline-viewer.js"></script>
+        <spline-viewer url="https://prod.spline.design/vn4adZYbpGU5wRzX/scene.splinecode"></spline-viewer>
+    </div>
+
+    <div class="inline-block translate-x-16">
+        <img src="../sauces/Group 2.png">
+    </div>
+
+    <script>
+        document.getElementById('omprakas').addEventListener('click', function() {
+            window.location.href = 'dodecahedron3dDark.html';
+        });
+    </script>
+    
+    
+</body>
+</html>
