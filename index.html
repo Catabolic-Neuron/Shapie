@@ -13,12 +13,12 @@
 </head>
 <body class="bg-lime-600 font-mono p-4 px-7 transition duration-200">
     <div class="flex ">
-        <div class="font-semibold text-3xl flex felx-row">Shapei</div>
+        <div class="font-semibold text-3xl flex felx-row hover:cursor-pointer">Shapei</div>
         <div class="flex grow justify-center">
             <div class="px-8 cursor-pointer relative before:content-[''] before:absolute before:w-0 before:h-0.5 before:bottom-2 before:left-0 before:bg-current before:transition-all before:duration-300 hover:before:w-full">Home</div>
             <div class="px-8 cursor-pointer relative before:content-[''] before:absolute before:w-0 before:h-0.5 before:bottom-2 before:left-0 before:bg-current before:transition-all before:duration-300 hover:before:w-full">2D</div>
             <div class="px-8 cursor-pointer relative before:content-[''] before:absolute before:w-0 before:h-0.5 before:bottom-2 before:left-0 before:bg-current before:transition-all before:duration-300 hover:before:w-full">3D</div>
-            <div class="px-8 cursor-pointer relative before:content-[''] before:absolute before:w-0 before:h-0.5 before:bottom-2 before:left-0 before:bg-current before:transition-all before:duration-300 hover:before:w-full">Game</div>
+            <div class="px-8 cursor-pointer relative before:content-[''] before:absolute before:w-0 before:h-0.5 before:bottom-2 before:left-0 before:bg-current before:transition-all before:duration-300 hover:before:w-full" id="khelo">Game</div>
             <div class="px-8 cursor-pointer relative before:content-[''] before:absolute before:w-0 before:h-0.5 before:bottom-2 before:left-0 before:bg-current before:transition-all before:duration-300 hover:before:w-full">About</div>
         </div>
         <div class="flex">
@@ -85,6 +85,7 @@
             }
             isWhite = !isWhite;
         });
+        document.getElementById('khelo').addEventListener('click', function() {window.open('https://quickdraw.withgoogle.com/', '_blank');});
     </script>
 </body>
 </html>
