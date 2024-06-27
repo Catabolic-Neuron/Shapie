@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodecahedron</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="stylish.css">
+    <style>
+
+    </style>
+</head>
+<body class="bg-lime-600 font-mono p-4 px-7 transition duration-200">
+    <div class="flex ">
+        <div class="font-semibold text-3xl flex felx-row">Shapei</div>
+        <div class="flex grow justify-center">
+            <div class="px-8 cursor-pointer relative before:content-[''] before:absolute before:w-0 before:h-0.5 before:bottom-2 before:left-0 before:bg-current before:transition-all before:duration-300 hover:before:w-full">Home</div>
+            <div class="px-8 cursor-pointer relative before:content-[''] before:absolute before:w-0 before:h-0.5 before:bottom-2 before:left-0 before:bg-current before:transition-all before:duration-300 hover:before:w-full">Linear</div>
+            <div class="px-8 cursor-pointer relative before:content-[''] before:absolute before:w-0 before:h-0.5 before:bottom-2 before:left-0 before:bg-current before:transition-all before:duration-300 hover:before:w-full">Curves</div>
+            <div class="px-8 cursor-pointer relative before:content-[''] before:absolute before:w-0 before:h-0.5 before:bottom-2 before:left-0 before:bg-current before:transition-all before:duration-300 hover:before:w-full">3D</div>
+            <div class="px-8 cursor-pointer relative before:content-[''] before:absolute before:w-0 before:h-0.5 before:bottom-2 before:left-0 before:bg-current before:transition-all before:duration-300 hover:before:w-full">About</div>
+        </div>
+        <div class="flex">
+            <div>
+                <span id ="omprakas" class="material-symbols-outlined px-6 cursor-pointer hover:rotate-45 duration-200">
+                    clear_night
+                </span>
+            </div>
+            <div>
+                EN
+            </div>
+            <span class="material-symbols-outlined px-6">
+                menu
+            </span>
+        </div>
+    </div>
+
+    <div class="py-16">
+        <div id="achha" style="font-size: 205px" class="absolute pt-20 font-extrabold text-white transition">
+            Dodecahedron 
+        </div>
+        <div class="absolute pl-96 ml-96">
+            <img id="chitra" src="../sauces/Vector 1.png" width="550px" style="transition: transform 0.2s ease;" 
+            onmouseover="this.style.transform = 'scale(1.2) rotate(10deg)';" 
+            onmouseout="this.style.transform = 'scale(1) rotate(0deg)';">
+        </div>
+    </div>
+    
+    <div class="pt-80 px-4 text-2xl">
+        <div class="flex ">
+            <div class="align-middle">12 Pentagons</div>
+            <span class="material-symbols-outlined px-2 pt-1 hover:rotate-45">pentagon</span>
+            <div>12 Sides</div>
+        </div>
+        <div class="flex ">
+            <div class="align-middle">30 Edges</div>
+            <span class="material-symbols-outlined px-2 pt-1 hover:rotate-45">line_curve</span>
+            <div>20 Corners</div>
+            <span class="material-symbols-outlined px-2 pt-1 hover:-rotate-45">arrow_back_ios_new</span>
+        </div>
+    </div>
+
+    <script> var img = document.getElementById('chitra');
+        var isWhite = false;
+        document.getElementById('omprakas').addEventListener('click', function() {
+            document.body.classList.toggle('bg-gray-950');
+            document.body.classList.toggle('bg-lime-600');
+            document.body.classList.toggle('text-white');
+            document.getElementById('achha').classList.toggle('text-white');
+            document.getElementById('achha').classList.toggle('text-lime-600');
+            if (isWhite) {
+                img.src = '../sauces/Vector 1.png';
+            } else {
+                img.src = '../sauces/Vector 1 white.png';
+            }
+            isWhite = !isWhite;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="grid grid-rows-6 gap-1">
+        <div class="row-span-3 bg-red-500">header madan</div>
+        <div class="row-span-2 bg-red-500">search bar madan</div>
+        <div class="grid grid-cols-5 gap-1">
+            <div class="bg-red-500">filters madan</div>
+            <div class="col-span-4 bg-red-500">content madan</div>
+        </div>
+    </div>
+    <div class="flex">
+        <div class="bg-yellow-400 m-1 p-2">item</div>
+        <div class="bg-yellow-400 m-1 p-2">item big</div>
+        <div class="bg-yellow-400 m-1 p-2">item biggest</div>
+    </div>
+
+    <div class="group">
+        <div class="bg-blue-500 p-4">Hover over me</div>
+        <div class="hidden group-hover:block bg-orange-400 p-4">I appear when you hover</div>
+    </div>
+    
+    <div class="bg-lime-400 m-1 p-1">
+        header
+    </div>
+    <div class="bg-lime-400 m-1 p-1">
+        search
+    </div>
+    <div class="flex">
+        <div class="bg-lime-400 flex-initial w-64 m-1 p-1">
+            filters
+        </div>
+        <div class="bg-blue-400 grow m-1 p-1">
+            <div class=" grid grid-cols-3 gap-1">
+                <div class=" bg-lime-400 m-1 p-1 h-64 hover:bg-lime-500 rounded-xl hover:h-48 transition-all">
+                    poke 1
+                </div>
+                <div class="bg-lime-400 m-1 p-1 h-64">poke 2</div>
+                <div class="bg-lime-400 m-1 p-1 h-64">poke 3</div>
+                <div class="bg-lime-400 m-1 p-1 h-64">poke 4</div>
+                <div class="bg-lime-400 m-1 p-1 h-64">poke 5</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
